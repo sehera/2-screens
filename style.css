@@ -1,0 +1,283 @@
+body{
+animation: fadeInAnimation ease 5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media(min-width: 600px) {
+
+  body{
+    background-color:black ;
+  }
+
+
+.films{
+  position:relative;
+  height: 200px;
+  width:1400px;
+  border-color:white;
+}
+
+      #myvideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:-1;
+      }
+
+#video2 {
+  display: none;}
+
+    .letter1{
+      color:wheat;
+      font-size: 100px;
+      font-family: "Akzidenz-Grotesk std" , sans-serif;
+      letter-spacing: 0.06em;
+      padding: 2px;
+      z-index:2;
+      position: relative;
+      left:18%;
+    }
+
+.letter1:hover{
+  color:white;
+  font-style:bold;
+  letter-spacing: 0.2em;
+ left:2%;
+}
+
+.letter2{
+  display:none;
+}
+.letter3{
+  display:none;
+}
+
+.textmobile{
+  display:none;
+}
+
+h1{
+  text-align:right;
+  color:wheat;
+  font-size: 80px;
+  font-family: "Akzidenz-Grotesk std" , sans-serif;
+  font-weight:100;
+  letter-spacing: 0.1em;
+  padding: 2px;
+}
+
+h1:after{
+    content:'5.4.20-18.4.20';
+}
+
+h1:hover:after{
+    content:'5th April 2020 - 18th April 2020 ';
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+}
+
+.text{
+  text-align:right;
+  justify-content:center;
+  color:wheat;
+  font-size: 25px;
+  font-family: "Akzidenz-Grotesk std" , sans-serif;
+  font-weight:100;
+  letter-spacing: 0.02em;
+  padding: 20px;
+  width:55%;
+}
+
+.text:after{
+  content:
+  'This exhibition is a diverse display of design in film. Presenting an investigation of graphics, sets, objects and parts of design that build a part of the foundation for film. The exhbition pamphlets have notes and essays from some designers, a rumination on the art of film design. This show continues in MOA PS3.'
+;
+}
+
+.text:hover:after{
+  content:'Honorable Mentions: Millicent Meyer, Eryk Henderson, Awais Beaumont, Yosef Livingston, Karol Zamora, Nicolas Flores, Haider Herrera, Ishan Lane, Osian Workman';
+  font-size: 28px;
+  color: white;
+  font-style: bold;
+}
+
+.square{
+  width:100px;
+  height:100px;
+  border: white solid;
+  animation: spin 5s linear infinite;
+  position: absolute;
+  left:55%;
+  top:60%;
+}
+
+.square2{
+  width:100px;
+  height:100px;
+  border: white solid;
+  animation: spin 5s linear infinite;
+  position: absolute;
+  left:70%;
+  top:7%;
+}
+
+
+.line{
+  width:100px;
+  height:90px;
+  border: white solid transparent solid;
+  animation: spin 5s linear infinite;
+  border:5px solid;
+  border-radius: 50%;
+  border-color: white transparent transparent;
+  animation: spin 3s linear infinite;
+  position: absolute;
+  left:20%;
+  top:30%;
+}
+@keyframes spin {
+  100%{transform:rotate(-360deg)}
+}
+
+.square:hover{
+  animation: none;}
+
+.square2:hover{
+    animation: none;}
+
+.line:hover{
+    animation: none;
+  }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    background-color:black;
+    background-image:url("background.jpg")
+  }
+
+  .letter1{
+    color:white;
+    font-size: 50px;
+    font-family: "Akzidenz-Grotesk std" , sans-serif;
+    letter-spacing: 0.06em;
+    transform: rotate(-35deg);
+    position: absolute;
+    top:50%;
+    left:22%;
+  }
+
+.letter1:hover{
+color:red;
+font-style:bold;
+}
+
+.letter2{
+  color:white;
+  font-size: 50px;
+  font-family: "Akzidenz-Grotesk std" , sans-serif;
+  letter-spacing: 0.06em;
+  transform: rotate(-35deg);
+  position: absolute;
+  top:40%;
+  left:22%;
+}
+
+.letter2:hover{
+color:black;
+font-style:bold;
+}
+
+.letter3{
+  color:white;
+  font-size: 50px;
+  font-family: "Akzidenz-Grotesk std" , sans-serif;
+  letter-spacing: 0.06em;
+  transform: rotate(-35deg);
+  position: absolute;
+  top:30%;
+  left:22%;
+}
+
+.letter3:hover{
+color:#527CDB;
+font-style:bold;
+}
+
+h1{
+text-align:right;
+color:white;
+font-size: 20px;
+font-family: "Akzidenz-Grotesk std" , sans-serif;
+font-weight:100;
+letter-spacing: 0.1em;
+padding: 2px;
+}
+
+h1:after{
+  content:'5.4.20-18.4.20';
+}
+
+h1:hover:after{
+  content:'5th April 2020 - 18th April 2020 ';
+  font-size: 20px;
+  color: red;
+  font-style: bold;
+}
+
+#myvideo {
+  display: none;
+}
+
+#video2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1;
+  opacity:20%;
+}
+
+.textmobile{
+  text-align:left;
+  color:white;
+  font-size: 15px;
+  font-family: "Akzidenz-Grotesk std" , sans-serif;
+  font-weight:100;
+  letter-spacing: 0.02em;
+position: absolute;
+top:80%;
+padding: 20px;
+}
+
+.movingtext{
+  display:none;
+}
+
+
+i{
+  display:none;
+}
+
+
+}
